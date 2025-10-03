@@ -1,0 +1,15 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# builds
+.next
+out
+dist
+build
+
+# misc
+.env
+.env.local
+.expo
+.DS_Store
