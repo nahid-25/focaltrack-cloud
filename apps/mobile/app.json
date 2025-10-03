@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "FocalTrack",
+    "slug": "focaltrack",
+    "scheme": "focaltrack",
+    "plugins": [
+      ["expo-location", { "isAndroidBackgroundLocationEnabled": false }]
+    ],
+    "ios": { "supportsTablet": false },
+    "android": { "permissions": ["ACCESS_FINE_LOCATION"] }
+  }
+}
