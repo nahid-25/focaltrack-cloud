@@ -1,10 +1,6 @@
 {
   "name": "FocalTrack Cloud Dev",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/pnpm:2": {}
-  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -13,6 +9,10 @@
       ]
     }
   },
-  "postCreateCommand": "corepack enable || true"
+  "remoteEnv": {
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
+  "postCreateCommand": "bash -lc 'corepack enable && corepack prepare pnpm@9 --activate'"
 }
+
 
