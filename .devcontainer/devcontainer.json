@@ -1,7 +1,8 @@
 {
   "name": "FocalTrack Cloud Dev",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
   "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/pnpm:2": {}
   },
   "customizations": {
@@ -12,5 +13,6 @@
       ]
     }
   },
-  "postCreateCommand": "pnpm install"
+  "postCreateCommand": "corepack enable || true"
 }
+
